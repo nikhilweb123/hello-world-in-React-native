@@ -1,0 +1,43 @@
+import React from 'react'
+import { View,Text, StyleSheet } from 'react-native';
+
+
+
+const msg= ' hello world'
+
+//class App extends React.Component
+//{
+  //render()
+  //{
+    //return (
+      //<View>
+      //<Text> Hello </Text>
+      //</View>
+      
+    //);
+  //}
+//}
+
+function App() {
+  return (
+    <View>
+    < Text style ={{textAlign:'center',color:'red'}}> {msg} </Text>
+     < Text style ={mystyle.textStyle}> {msg} </Text>
+     <Text style ={[mystyle.textStyle,{backgroundColor:'yellow',color:'black'}]}> hello world </Text>
+     </View>
+  );
+}
+const mystyle = StyleSheet.create({
+  textStyle : {
+marginTop:50,
+ textAlign:'center',
+  color:'yellow',
+   fontsize:20,
+   backgroundColor:'green',
+   padding:30,
+},
+viewStyle: {},
+});
+
+
+export default App;
